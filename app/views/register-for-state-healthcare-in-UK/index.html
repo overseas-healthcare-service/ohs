@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Register for state healthcare in the UK
+{% endblock %}
+
+{% block proposition_header %}
+    {% include "includes/proposition_header.html" %} 
+{% endblock %}
+
+{% block header_class %}
+  with-proposition
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="https://www.gov.uk">Home</a></li>
+      <li><a href="../">Overseas Healthcare Service</a></li>
+      <li>Register</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <!-- {% if serviceName %} {{ serviceName }} {% endif %} -->
+        Register for state healthcare in the UK
+      </h1>
+
+      <p class="lede">
+  People insured for health in the EU, EEA, and Switzerland arriving in the UK since <u>[the date]</u> need to pre-register here before accessing NHS healthcare.
+</p>
+
+      <p>Use this service to:</p>
+
+      <ul class="list list-bullet">
+        <li>pre-register for healthcare in the UK</li>
+        <li>you need to do this in order to register with a doctor or go to hospital</li>
+      </uL>
+
+      {% include "includes/participating_countries.html" %}
+
+      <p>Registration takes around 10 minutes.</p>
+
+      <p>
+        <a class="button button-start" href="#" role="button">Start now</a>
+      </p>
+
+      <h2 class="heading-medium">Before you start</h2>
+
+      <p>You need your <u>[document, and document]</u>.</p>
+
+      <p>You may need to scan your documents or send them to us by post.</p>
+
+      <p>You can also <a href="#">register by post</a>.</p>
+
+      <p></p>
+
+      <p>To use this service you must be in the UK legally.</p>
+
+    </div>
+    <!-- div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">Related link</a></li>
+            <li><a href="#">Related link</a></li>
+            <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div -->
+  </div>
+
+</main>
+
+{% endblock %}

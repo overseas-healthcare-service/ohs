@@ -1,0 +1,19 @@
+  <div class="header-proposition">
+    <div class="content">
+      <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+      <nav id="proposition-menu">
+        <a href="/" id="proposition-name">
+          {# Set serviceName in config.js. Use a block to override on a page. #}
+          {% block service_name %}
+            {% if serviceName %} {{ serviceName }} {% endif %}
+          {% endblock %}
+        </a>
+        <ul id="proposition-links">
+          <li><a href="/apply-for-state-healthcare-overseas/" class="active">Apply</a></li>
+          <li><a href="/register-for-state-healthcare-in-UK/" class="active">Register</a></li>
+          <li><a href="/claim-for-cost-of-healthcare-overseas/">Claim</a></li>
+          <li><a href="/change-details/">Change your details</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>

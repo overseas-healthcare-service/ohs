@@ -1,0 +1,68 @@
+{% extends "govuk_template.html" %}
+
+{% block head %}
+  {% include "includes/head.html" %}
+{% endblock %}
+
+{% block cookie_message %}
+  <p>{{cookieText | safe }}</p>
+{% endblock %}
+
+{% block proposition_header %}
+
+  <div class="header-proposition">
+    <div class="content">
+      <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+      <nav id="proposition-menu">
+        <a href="/docs" id="proposition-name">
+          {% block service_name %}
+            Overseas Healthcare Service
+          {% endblock %}
+        </a>
+
+        <ul id="proposition-links">
+          <li><a href="#">Register</a></li>
+          <li><a href="#">Claim</a></li>
+          <li><a href="#">Your Account</a></li>
+          
+        </ul>
+
+      </nav>
+    </div>
+  </div>
+
+{% endblock %}
+
+
+{% include "includes/phase_banner_alpha.html" %}
+
+{% block phase_banner %}
+  <div class="phase-banner">
+    <p>
+      <strong class="phase-tag">ALPHA</strong>
+      <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+    </p>
+  </div>
+{% endblock %}
+
+
+{% block header_class %}
+  with-proposition
+{% endblock %}
+
+{% block footer_support_links %}
+  {% if useAutoStoreData %}
+    <ul>
+      <li>
+        <a href="/prototype-admin/clear-data">Clear data</a>  | <a href="/docs/views/gov-uk-prototype-kit.html">Prototype Kit</a>
+      </li>
+    </ul>
+  {% endif %}
+  
+{% endblock %}
+
+
+{% block body_end %}
+  {% include "includes/scripts.html" %}
+  <!-- GOV.UK Prototype kit {{releaseVersion}} -->
+{% endblock %}

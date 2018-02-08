@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Change your details on the Overseas Healthcare Service
+{% endblock %}
+
+{% block proposition_header %}
+    {% include "includes/proposition_header.html" %} 
+{% endblock %}
+
+{% block header_class %}
+  with-proposition
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+    <ol>
+      <li><a href="https://www.gov.uk">Home</a></li>
+      <li><a href="../">Overseas Healthcare Service</a></li>
+      <li>Change your details</li>
+    </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        <!-- {% if serviceName %} {{ serviceName }} {% endif %} -->
+        Change your details
+      </h1>
+
+      <p class="lede">
+  If your circumstances have changed let us know.
+</p>
+
+      <p>Use this service to:</p>
+
+      <ul class="list list-bullet">
+        <li>tell us your circumstances have changed</li>
+        <li>tell us you are going to live abroad</li>
+        <li>tell us you are returning to live in the UK</li>
+        <li>tell us you no longer need overseas healthcare</li>
+        <li>tell us someone claiming overseas healthcare benefits has passed away</li>
+      </uL>
+
+      <p>Changing your details takes 5 minutes or longer.</p>
+
+      <p>
+        <a class="button button-start" href="#" role="button">Start now</a>
+      </p>
+
+      <h2 class="heading-medium">Before you start</h2>
+
+      <p>You need your <u>[document, and document]</u> to prove your change of circumstances</p>
+
+      <p>You may need to scan documents to upload as evidence, or to post them to us if asked</p>
+
+    </div>
+    <!-- div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">Subsection</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">Related link</a></li>
+            <li><a href="#">Related link</a></li>
+            <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div -->
+  </div>
+
+</main>
+
+{% endblock %}

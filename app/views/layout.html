@@ -1,0 +1,39 @@
+{% extends "govuk_template.html" %}
+
+{% block head %}
+  {% include "includes/head.html" %}
+{% endblock %}
+
+{% block cookie_message %}
+  <p>{{cookieText | safe }}</p>
+{% endblock %}
+
+{% block proposition_header %}
+
+  {% include "includes/proposition_header.html" %}
+
+{% endblock %}
+
+{% block header_class %}
+  with-proposition
+{% endblock %}
+
+{% include "includes/phase_banner_alpha.html" %}
+
+{% block footer_support_links %}
+  {% if useAutoStoreData %}
+    <ul>
+      <li>
+        <a href="/prototype-admin/clear-data">Clear data</a>
+      </li>
+    </ul>
+  {% endif %}
+{% endblock %}
+
+{% block body_end %}
+  {% block scripts %}
+    {% include "includes/scripts.html" %}
+    {% block page_scripts %}{% endblock %}
+  {% endblock %}
+  <!-- GOV.UK Prototype kit {{releaseVersion}} -->
+{% endblock %}

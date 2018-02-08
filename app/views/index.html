@@ -1,0 +1,122 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Overseas Healthcare Service
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Overseas Healthcare Service
+        <span class="heading-secondary"></span>
+      </h1>
+      <p class="lede">
+        The Overseas Healthcare Service enables insured citizens to get state funded healthcare when abroad.
+      </p>
+
+
+    </div>
+
+    <div class="column-two-thirds">
+
+      <h2 class="heading-medium">About this service</h2>
+
+      <p>Use this service to get proof you are eligible for UK state funded healthcare abroad, or to register as a foreign national for healthcare in the UK. If you paid for healthcare when abroad use this service to claim back costs.</p>
+
+      {% include "includes/participating_countries.html" %}
+
+		<h2 class="heading-medium">Get state healthcare abroad</h2>
+
+		<p>Eligible people from the UK can get state funded healthcare when abroad. Use this service to certify you are eligible for state funded healthcare abroad.</p>
+
+		<ul class="list list-bullet">
+			<li><a href="apply-for-state-healthcare-overseas/">Apply for state healthcare when abroad</a></li>
+		</ul>
+
+      <h2 class="heading-medium">Register for state healthcare in the UK</h2>
+
+      <p>Insured and eligible people from the EU/EEA and Switzerland can use this service to register for state healthcare while in the UK.</p>
+
+			<ul class="list list-bullet">
+				<li>
+					<a href="register-for-state-healthcare-in-UK/">
+						Register for state healthcare in the UK
+					</a>
+				</li>
+
+		</ul>
+
+    <h2 class="heading-medium">Tell us your circumstances have changed</h2>
+
+      <p>If your circumstances have changed use this service to let us know. Tell us you have changed address, moved abroad, returned to the UK, or you no longer need overseas healthcare.</p>
+
+      <ul class="list list-bullet">
+        <li>
+          <a href="change-details/">Tell us your circumstances have changed
+          </a>
+        </li>
+
+    </ul>
+
+    <h2 class="heading-medium">Claim for costs of healthcare abroad</h2>
+
+      <p>You may be eligible to claim for healthcare costs while abroad in participating countries.</p>
+
+      <ul class="list list-bullet">
+        <li>
+          <a href="claim-for-cost-of-healthcare-overseas/">
+            Claim for costs of healthcare while abroad
+          </a>
+        </li>
+
+    </ul>
+
+    <h2 class="heading-medium">Check the validity of a certificate or OHS healthcard</h2>
+
+      <p>Check a UK issued certificate or OHS healthcard is still valid.</p>
+
+      <ul class="list list-bullet">
+        <li>
+          <a href="check-a-certificate-or-healthcard/">
+            Check a certificate or OHS healthcard
+          </a>
+        </li>
+
+    </ul>
+	
+
+    <!--
+
+		<hr />
+
+		[<a href="index-kit">GOV.UK prototype kit</a>]
+
+      /-->
+
+    </div>
+
+    <div class="column-third">
+
+      <aside class="govuk-related-items" role="complementary">
+        <h2 class="heading-medium" id="subsection-title">About overseas healthcare</h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="font-xsmall">
+            <li><a href="#">UK persons going abroad</a></li>
+            <li><a href="#">People coming to the UK</a></li>
+            <li><a href="#">What costs can I claim back?</a></li>
+            <li><u>These links are examples for now</u></li>
+            <li><a href="#" class="bold-xsmall">More <span class="visuallyhidden">in Subsection</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+</main>
+
+{% endblock %}

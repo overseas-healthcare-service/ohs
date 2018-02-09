@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Create an account
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+      <a class="link-back" href="/apply-for-state-healthcare-overseas/sign-in-register">Back</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/apply-for-state-healthcare-overseas/" method="get" class="form">
+
+          <h1 class="heading-xlarge">
+            Register your email
+          </h1>
+
+          <p>
+            Enter an email address and password so you can save your answers. We will email you a unique link to let you log back in to complete your application.
+          </p>
+
+        <div class="form-group">
+          <fieldset>
+
+          <div class="form-group">
+            <label class="form-label" for="first-name-2">Email address</label>
+            <input class="form-control" id="first-name-2" name="credentials-email" type="text">
+          </div>
+
+          <div class="form-group">
+          <label class="form-label" for="set-password">
+            Create a password
+            <span class="form-hint">
+              Your password must be 8 characters or longer and include a letter and a number or symbol.
+            </span>
+          </label>
+          <input class="form-control" id="ni-number" type="text" name="credentials-set-password">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="last-name-2">Repeat your password</label>
+            <input class="form-control" id="last-name-2" name="credentials-repeat-password" type="text">
+          </div>
+
+
+          <h2 class="heading-medium">
+            Sharing your data
+          </h2>
+
+          <div class="dwp-permission-group form-group">
+              
+                  <div>
+                      <p>To apply for this service online your details like your National Insurance number will be shared with other government departments (HMRC and DWP) to check your identity, as described in our <a href="#" target="_blank">privacy policy</a>. </p>
+                      <!-- eg https://www.viewdrivingrecord.service.gov.uk/privacypolicy -->
+                  </div>
+                  </br>
+                  <input
+                          type="checkbox"
+                          id="dwpPermission"
+                          name="dwpPermission"
+                          value="1"
+                   />
+                   <label for="dwpPermission">
+                  I would like to use this service and understand that my data will be shared as explained above.
+              </label>
+          </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input id="submit" type="submit" value="Save and continue"  class="button button-continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

@@ -1,0 +1,248 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Which country are you going to?
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+      <a class="link-back" href="javascript:window.history.back()">Back</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+        <h1 class="heading-xlarge">
+          Which country are you going to?
+        </h1>
+
+        <p>
+          Check the country you are going to is covered by the overseas health service.
+        </p>
+
+
+    <form action="/apply-for-state-healthcare-overseas/sign-in-register.html" method="get" class="form">
+      <div class="form-group">
+        <fieldset>
+
+<!--
+* Radios need numbering if you want to parse this form.
+*-->
+
+          <legend>
+            <h1 class="heading-medium">EU, EEA countries, or Switzerland</h1>
+          </legend>
+
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Austria">
+            <label for="radio-1">Austria</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Belgium">
+            <label for="radio-1">Belgium</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Bulgaria">
+            <label for="radio-1">Bulgaria</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Croatia">
+            <label for="radio-1">Croatia</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Cyprus">
+            <label for="radio-1">Cyprus</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Czech Republic">
+            <label for="radio-1">Czech Republic</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Denmark">
+            <label for="radio-1">Denmark</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Estonia">
+            <label for="radio-1">Estonia</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="France">
+            <label for="radio-1">France</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="country-going-to" value="Germany">
+            <label for="radio-2">Germany</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="Greece">
+            <label for="radio-3">Greece</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Hungary">
+            <label for="radio-1">Hungary</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="country-going-to" value="Iceland">
+            <label for="radio-2">Iceland</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="Ireland">
+            <label for="radio-3">Ireland</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Italy">
+            <label for="radio-1">Italy</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="country-going-to" value="Latvia">
+            <label for="radio-2">Latvia</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="Liechtenstein">
+            <label for="radio-3">Liechtenstein</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Lithuania">
+            <label for="radio-1">Lithuania</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="country-going-to" value="Luxembourg">
+            <label for="radio-2">Luxembourg</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="Malta">
+            <label for="radio-3">Malta</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Netherlands">
+            <label for="radio-1">Netherlands</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="country-going-to" value="Norway">
+            <label for="radio-2">Norway</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="Poland">
+            <label for="radio-3">Poland</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Portugal">
+            <label for="radio-1">Portugal</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="country-going-to" value="Romania">
+            <label for="radio-2">Romania</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="Slovakia">
+            <label for="radio-3">Slovakia</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="Slovenia">
+            <label for="radio-3">Slovenia</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Spain">
+            <label for="radio-1">Spain</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="country-going-to" value="Sweden">
+            <label for="radio-2">Sweden</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="Switzerland">
+            <label for="radio-3">Switzerland</label>
+          </div>
+
+
+          <div class="form-block">
+          <legend>
+            <h1 class="heading-medium">Rest of world</h1>
+          </legend>
+          </div>
+
+
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="country-going-to" value="Anguilla">
+            <label for="radio-2">Anguilla</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="Australia">
+            <label for="radio-3">Australia</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Bosnia and Herzegovina">
+            <label for="radio-1">Bosnia and Herzegovina</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="country-going-to" value="British Virgin Islands">
+            <label for="radio-2">British Virgin Islands</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="Falkland Islands">
+            <label for="radio-3">Falkland Islands</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Gibraltar">
+            <label for="radio-1">Gibraltar</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="country-going-to" value="Isle of Man">
+            <label for="radio-2">Isle of Man</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="Jersey">
+            <label for="radio-3">Jersey</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="Macedonia">
+            <label for="radio-1">Macedonia (Former Yugoslav Republic of Macedonia)</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="country-going-to" value="Montenegro">
+            <label for="radio-2">Montenegro</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="Montserrat">
+            <label for="radio-3">Montserrat</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="New Zealand">
+            <label for="radio-3">New Zealand</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-1" type="radio" name="country-going-to" value="St Helena">
+            <label for="radio-1">St Helena</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-2" type="radio" name="country-going-to" value="Serbia">
+            <label for="radio-2">Serbia</label>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="Turks and Caicos Islands">
+            <label for="radio-3">Turks and Caicos Islands</label>
+          </div>
+
+          <div class="form-block">
+          <legend>
+            <h1 class="heading-medium">Any other country</h1>
+          </legend>
+          </div>
+          <div class="multiple-choice">
+            <input id="radio-3" type="radio" name="country-going-to" value="Another country">
+            <label for="radio-3">Another country</label>
+          </div>
+
+        </fieldset>
+      </div>
+
+        <div class="form-group">
+          <input class="button" type="submit" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}

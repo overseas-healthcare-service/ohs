@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  What is your address?
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+
+      <a class="link-back" href="javascript:window.history.back()">Back</a>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <form action="/apply-for-state-healthcare-overseas/address-enter-postcode.html" method="get" class="form">
+
+        <h1 class="heading-xlarge">
+          What is your address?
+        </h1>
+
+        <p>
+          If this is your first application you need to register to apply for overseas healthcare. Otherwise, sign in to continue.
+        </p>
+
+        <h2 class="heading-medium">
+          Sign in or register
+        </h2>
+       
+        <div class="form-group">
+          <fieldset>
+
+
+            <legend class="visuallyhidden">Sign in with your OHS account</legend>
+
+            <div class="multiple-choice">
+              <input id="signin" type="radio" name="signinregister" value="signin">
+              <label class="form-label" for="signin"><span class="bold-small">Sign in with your OHS account</span>
+              <span class="form-hint">
+                You’ll have an account if you registered online before for overseas healthcare.
+              </span></label>
+            </div>
+
+
+            <legend class="visuallyhidden">Sign in with GOV.UK Verify</legend>
+
+            <div class="multiple-choice">
+              <input id="verify" type="radio" name="signinregister" value="verify">
+              <label class="form-label" for="verify"><span class="bold-small">Sign in with GOV.UK Verify</span>
+              <span class="form-hint">
+                You’ll have an account if you’ve already proved your identity with either Barclays, CitizenSafe, Digidentity, Experian, Post Office, Royal Mail or SecureIdentity.
+              </span></label>
+            </div>
+
+            <p>or </p>
+
+
+            <legend class="visuallyhidden">Register for overseas healthcare</legend>
+
+            <div class="multiple-choice">
+              <input id="register" type="radio" name="signinregister" value="register">
+              <label class="form-label" for="register"><span class="bold-small">Register for overseas healthcare</span>
+              <span class="form-hint">
+                Register with the service before submitting your application.
+              </span></label>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="form-group">
+          <input type="submit" class="button" value="Continue"> 
+          <input id="submit" type="submit" value="Save and continue"  class="button button-continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{% endblock %}
